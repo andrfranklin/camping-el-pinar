@@ -1,0 +1,400 @@
+/* load page code */
+.load {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/logo_elpinar_black.png");
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: center;
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+  display: none;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    background-size: 120px;
+    color: black;
+  }
+  50% {
+    background-size: 150px;
+    color: gray;
+  }
+  100% {
+    background-size: 120px;
+    color: black;
+  }
+}
+
+@-webkit-keyframes fade_out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.body {
+  display: block;
+}
+
+@-webkit-keyframes showBody {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* end load page code */
+
+/* menu code */
+
+.menu {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 10px 0px 5px;
+}
+
+.logonav {
+  width: 80px;
+}
+
+/* end menu code */
+
+/* presetation carousel code */
+
+.carousel {
+  z-index: 0;
+}
+
+.carousel-item {
+  margin-top: 100px;
+  background-color: #4297bb;
+}
+
+.carousel-item img {
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
+  filter: opacity(90%);
+}
+
+.carousel-caption {
+  bottom: 40%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+  position: relative;
+  animation-name: enterH1;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes enterH1 {
+  from {
+    top: -200px;
+    opacity: 0.0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.carousel-caption p {
+  position: relative;
+  animation-name: enterP;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes enterP {
+  from {
+    bottom: -200px;
+    opacity: 0.0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+ /* caption exibition lg screen */
+
+.bt-g {
+  bottom: 40%;
+}
+
+.bt-g h1 {
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+.bt-g p {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+/* end caption exibition lg screen */
+
+/* caption exibition md screen */
+
+.bt-m {
+  top: 15%;
+  bottom: 20%;
+}
+
+.bt-m h1 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+.bt-m p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+/* end caption exibition md screen */
+
+/* caption exibition sm screen */
+
+.bt-p {
+  bottom: 15%;
+}
+
+.bt-p h1 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+.bt-p p {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+
+/* end caption exibition sm screen */
+
+/* end presetation carousel code */
+
+/* services code */
+
+
+.services {
+  background-image: linear-gradient(white 50%, rgb(68, 147, 111) 50%);
+  width: 100%;
+  padding-top: 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.title_services {
+  width: 100%;
+  font-family: serif;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  color: rgb(26, 85, 98);
+}
+
+.title_services_p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.title_services h1>p {
+  color: #529654;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.card {
+  margin-bottom: 10%;
+  border-radius: 30px;
+}
+
+.card-img-top {
+  border-radius: 30px 30px 0px 0px;
+}
+
+#carousel-services-sm-screen .carousel-item{
+  background-color: rgba(220, 184, 238, 0);
+}
+
+/* end services code */
+
+
+/* testemonial code */
+
+.testimonial {
+  box-shadow: 0px 0px 10px gray;
+  box-shadow: 10px 0px 10px black;
+  padding-top: 3%;
+  background-image: linear-gradient(rgba(20, 61, 19, 0.80), rgba(20, 61, 19, 0.80)), url('../images/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: serif;
+}
+
+.testimonial h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.testimonial h3 {
+  font-size: 30px;
+  font-style: oblique;
+  color: rgb(205, 205, 205);
+}
+
+#carouselusercomments {
+  height: 400px;
+}
+
+#carouselusercomments .carousel-item {
+  background-color: rgba(252, 252, 252, 0);
+}
+
+/* end testemonial code */
+
+/* footer */
+
+.footer {
+  padding-top: 5%;
+  /*background-color: #366337;*/
+  background-color: #529654;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.description img {
+  width: 20%;
+  position: relative;
+  margin-left: 38%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.72);
+  border-radius: 100px;
+  margin-bottom: 50px;
+  background-color: #457d46;
+  padding: 20px;
+}
+
+.description p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 90%;
+  padding-left: 5%;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 200;
+}
+
+.contact {
+  margin-bottom: 5%;
+  padding-left: 7%;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+}
+
+.contact h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-list {
+  font-weight: 200;
+}
+
+.contact-list dt {
+  font-weight: 400;
+}
+
+.social {
+  font-size: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  padding-right: 3%;
+}
+
+.social a:hover {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+/* end footer */
+
+/* back to top button */
+
+.back-to-top {
+  position: relative;
+  z-index: 2;
+}
+
+.back-to-top i {
+  color: black;
+}
+
+.back-to-top:hover i {
+  color: white;
+}
+
+.back-to-top .btn-dark {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-color: #2e2e2e;
+  display: none;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.back-to-top .btn-dark:hover {
+  cursor: pointer;
+  background: #457d46;
+  border-color: white;
+}
+
+/* end back to top button */
